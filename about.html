@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Edublog Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p{
+            animation: fade 2s forwards;
+        }
+        @keyframes fade{
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+        h2{
+            animation: slide 2s forwards;
+        }
+        @keyframes slide{
+            from{
+                transform: translateX(-250px);
+            }
+            to{
+                transform: translateX(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Edublog Academy</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>About Us</h2>
+        <p>Edublog Academy is committed to providing quality education and fostering academic excellence.</p>
+    </main>
+
+<div class="comment-section">
+        <h2>Rate us</h2>
+        <div id="comments"></div>
+        <textarea id="commentInput" placeholder="Write a comment..."></textarea>
+        <button id="submitComment">Submit</button>
+    </div>
+     
+  <footer>
+      <p>&copy; 2025 Edublog. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>

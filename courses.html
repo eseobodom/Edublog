@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Edublog Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css" media="all">
+        .outline{
+            font-size: 1.2em;
+            list-style: none;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Edublog Academy</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Topics</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 style="text-align: left;">Our Courses</h2>
+        <ul class="outline">
+            <li><a href="topic1.html"><span>Topic 1</span>: Impact of Hardware and Software Technology</a></li><br>
+             <li><a href="topic1.html"><span>Topic 2</span>: Photography</a></li><br>
+              <li><a href="topic1.html"> <span>Topic 3</span>: Data science </a></li><br>
+               <li><a href="topic1.html"><span>Topic 4</span>: Education</a></li>
+        </ul>
+    </main><div class="comment-section">
+        <h2>Not found what you're looking for?<br> Give us a feedback</h2>
+        <marquee>Your feedback matters a lot...</marquee>
+        <div id="comments"></div>
+        <textarea id="commentInput" placeholder="Type your feedback..."></textarea>
+        <button id="submitComment">Submit</button>
+    </div>
+
+  <footer>
+      <p>&copy; 2025 Edublog. All rights reserved.</p>
+  </footer>
+<script type="text/javascript" charset="utf-8">
+    document.getElementById('submitComment').addEventListener('click', () => {
+        const feed = document.getElementById('commentInput').value;
+        if(feed.trim() === ''){
+            alert('Please provide a feedback');
+        } else{
+            alert('Thank you for your feedback. Your request is been processed')
+        }
+    });
+</script>
+</body>
+</html>
